@@ -603,9 +603,10 @@ body {
     font-size: 1.5rem;
     text-align: left;
   }
-  /* .work-main-flex {
-    transform: translate(5%, -10%);
-  } */
+  .work-main-flex {
+    /* transform: translate(5%, -10%); */
+    overflow: hidden;
+  }
   .carousel-temp-container {
     display: flex;
     flex-direction: row;
