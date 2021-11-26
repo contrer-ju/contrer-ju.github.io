@@ -92,7 +92,7 @@ body {
   top: 0;
 }
 .height-home-div {
-  height: 5vh
+  height: 5vh;
 }
 
 /* Navigation Section*/
@@ -224,11 +224,17 @@ body {
 .work-main-flex {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  transform: translate(0, -10%);
+  /* overflow: hidden; */
+  overflow: scroll;
 }
-.work-text {
+/* .work-text {
   transform: translate(0, 45%);
+} */
+.carousel-temp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .carousel-container {
   display: flex;
@@ -244,6 +250,17 @@ body {
   height: auto;
   overflow: hidden;
   transition: all 300ms ease-in-out;
+}
+.carousel-temp-item {
+  width: 95%;
+  /* object-fit: scale-down;
+  border-radius: 2%; */
+}
+.carousel-temp-item img {
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+  border-radius: 2%;
 }
 .carousel-item img {
   width: 100%;
@@ -550,7 +567,7 @@ body {
     height: 17vh;
   }
   .height-home-div {
-    height: 20vh
+    height: 20vh;
   }
 }
 
@@ -586,16 +603,20 @@ body {
     font-size: 1.5rem;
     text-align: left;
   }
-  .work-main-flex {
+  /* .work-main-flex {
     transform: translate(5%, -10%);
+  } */
+  .carousel-temp-container {
+    display: flex;
+    flex-direction: row;
   }
   .carousel-container {
     flex-direction: row;
     width: 72vw;
   }
-  .carousel-text-container {
+  /* .carousel-text-container {
     width: 80%;
-  }
+  } */
   .carousel-container .carousel-item {
     width: 100%;
     height: 100%;
@@ -611,7 +632,7 @@ body {
   }
   .carousel-controls {
     width: 70%;
-  } 
+  }
   .carousel-controls .carousel-button {
     font-size: 40px;
   }
@@ -656,5 +677,20 @@ body {
   .button-container {
     justify-content: flex-end;
     width: 90%;
+  }
+  /* Remove all bellow this, after carousel active*/
+  .work-text {
+    transform: translate(0, 0);
+  }
+  .carousel-temp-item {
+    width: 44%;
+    /* object-fit: scale-down;
+    border-radius: 2%; */
+  }
+  .carousel-temp-item img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 2%;
   }
 }
